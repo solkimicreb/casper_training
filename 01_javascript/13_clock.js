@@ -3,4 +3,4 @@ function logTime () {
   console.log(time)
 }
 
-setInterval(1000, time)
+setInterval(logTime, 1000)
