@@ -1,0 +1,40 @@
+<script>
+  function sendData (ev) {
+    var inputs = ev.target.elements
+    console.log(inputs)
+    alert('Your name is: ' + inputs.name.value + ', your password is: ' + inputs.psw.value)
+    ev.preventDefault()
+  }
+</script>
+
+<style>
+  * {
+    font-size: 16px;
+  }
+
+  form {
+    width: 200;
+    margin: auto;
+    margin-top: 100px;
+    border: solid gray 1px;
+  }
+
+  input, button {
+    width: 90%;
+    display: block;
+    margin: 10px auto;
+  }
+
+  button {
+    background-color: blue;
+    color: white;
+    margin-top: 20px;
+    height: 30px;
+  }
+</style>
+
+<form onsubmit="sendData(event)">
+  <input name="name" placeholder="Your name ..."/>
+  <input type="password" name="psw" placeholder="Your password ..." />
+  <button>Sign In</button>
+</form>

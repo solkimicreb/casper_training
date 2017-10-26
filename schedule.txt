@@ -1,0 +1,4 @@
+1, install Node
+2, install Python, CasperJS and PhantomJS
+3, install local-network-chat -> use it with local-network-chat username
+4, use http-server to share my code

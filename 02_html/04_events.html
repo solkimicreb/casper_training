@@ -1,0 +1,15 @@
+<script>
+  function log (event) {
+    console.log('EVENT: ' + event.type)
+  }
+</script>
+
+<input oninput="log(event)" placeholder="Triggers on input" />
+<input onchange="log(event)" placeholder="Triggers on change" />
+<button onclick="log(event)">Triggers on click!</button>
+
+<form onsubmit="log(event)">
+  Triggers on submit:
+  <input placeholder="Add some data here ..."/>
+  <button>Submit</button>
+</form>

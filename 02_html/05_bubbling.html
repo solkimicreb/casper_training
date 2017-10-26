@@ -1,0 +1,24 @@
+<script>
+  function logTarget (event) {
+    var currentTarget = event.currentTarget.getAttribute('name')
+    console.log('CURRENT TARGET:', currentTarget)
+  }
+</script>
+
+<style>
+  div[name="outer"] {
+    padding: 40px;
+  background-color: gray;
+  }
+
+  div[name="inner"] {
+    padding: 20px;
+    background-color: lightgray;
+  }
+</style>
+
+<div name="outer" onclick="logTarget(event)">
+  <div name="inner" onclick="logTarget(event)">
+    <button name="button" onclick="logTarget(event)">Triggers on click!</button>
+  </div>
+</div>

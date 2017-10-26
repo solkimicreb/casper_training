@@ -1,0 +1,13 @@
+{
+  "name": "googlesnapshot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "casperjs test test.js",
+    "validate-test": "magic-visual-regression images/reference images/test images/diff",
+    "approve-test": "cp images/test/* images/reference"
+  },
+  "author": "",
+  "license": "ISC"
+}
