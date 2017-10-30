@@ -1,3 +1,4 @@
+// by returning the object itself (this) in every method I can chain method calls later
 var counter = {
   num: 0,
   tick: function (amount) {
@@ -10,6 +11,7 @@ var counter = {
   }
 }
 
+// this is equivalent to: counter.tick(5); counter.log(); counter.tick(2); counter.log();
 counter
   .tick(5)
   .log()

@@ -14,8 +14,8 @@ casper.test.begin('Test ingatlan.com', 1, function (test) {
     })
     .then(function () {
       casper.fill('#loginform', {
-        'signin[username]': 'miklos.bertalan1@gmail.com',
-        'signin[password]': '0476Ceasar'
+        'signin[username]': '<YOUR EMAIL>', // replace this with your email
+        'signin[password]': '<YOUR PASSWORD>' // replace this with your ingatlan.com password
       }, true)
     })
     .waitWhileVisible('.login-popup', function () {

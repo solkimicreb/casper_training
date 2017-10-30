@@ -1,3 +1,4 @@
+// this creates an object with 2 (name and age) properties
 var person = {
   name: 'Bob',
   age: 12

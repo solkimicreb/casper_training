@@ -9,5 +9,8 @@
     "approve-test": "cp images/test/* images/reference"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "magic-visual-regression": "^0.1.6"
+  }
 }

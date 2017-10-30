@@ -6,5 +6,7 @@ function greet (name) {
   }
 }
 
+// this logs 'Hello Ann'!
 greet('Ann')
+// this logs 'It's a pleasure Mr. Norris'
 greet('Chuck Norris')
